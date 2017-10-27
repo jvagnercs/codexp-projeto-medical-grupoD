@@ -1,0 +1,165 @@
+	* {
+			box-sizing: border-box;
+		}
+
+		html, body {
+			height: 100%;
+			width: 100%;
+			font-family: sans-serif;
+		}
+
+		body {
+			padding: 12px;
+		}
+
+		/* --------------- LOGOTIPO --------------- */
+		.logotipo {
+			margin-right: 64px;
+			width: 500px;
+			height: auto;
+			margin-left: 32px;
+			display: inline-block;
+		}
+
+		/* --------------- NAV BAR --------------- */
+		.navigation-bar {
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 3%;
+			overflow: hidden;	
+		}
+
+		.navigation-bar ul {
+			display: inline-block;
+			list-style: none;
+			padding: 0;
+			padding-left: 18px;
+		
+			/* método maluco de colocar border com dotted separado que encontrei no stackoverflow (antes funcionava só com border-right mas não separava as bolinhas igual ao site) */
+			background-image: linear-gradient(lightgray 33%, rgba(255,255,255,0) 0%);
+			background-position: right;
+		  background-size: 1px 7px;
+		  background-repeat: repeat-y;
+		}
+
+		.navigation-bar ul:last-child {
+			vertical-align: top;
+			background-image: none;
+		}
+
+		.navigation-bar ul li {
+			margin-bottom: 18px;
+			margin-right: 24px;
+		}
+
+		.navigation-bar--list-title {
+			color: gray;
+		}
+
+		.unordered-list--professionals li a{
+			color: cornflowerblue;
+		}
+
+		.unordered-list--employers li a {
+			color: darkcyan;
+		}
+
+		.unordered-list--default li a {
+			color: gray;
+		}
+
+		/* ---------- FORMULARIO PESQUISA ---------- */
+		.formulario-pesquisa {
+			height: 150px;
+			width: 500px;
+			display: inline-block;
+			margin: 0;
+			padding: 20px;
+			border-radius: 4px;
+			/*margin-right: 120px;*/
+		}
+
+		.enfermeira {
+			background-image: url("enfermeira.png");
+			background-color: #0086da;
+			background-repeat: no-repeat;
+		}
+
+		.medico {
+			background-image: url("medico.png");
+			background-color: #0086da;
+			background-repeat: no-repeat;
+
+			float: right;
+			margin-right: 17px;
+		}
+
+		.formulario-pesquisa--primario {
+			width: 40%;
+			height: auto;
+			margin-left: 60px;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.formulario-pesquisa--primario label {
+			font-size: 1.3em;
+		}
+
+		.formulario-pesquisa--secundario {
+			width: 40%;
+			height: auto;
+			display: inline-block;
+			margin-top: 5%;
+		}
+
+		.formulario-pesquisa--secundario select {
+			width: 220px;
+			margin-bottom: 12px;
+		}
+
+		.formulario-pesquisa--submit a {
+			font-size: 0.8em;
+			margin-right: 20px;
+			color: white;
+		}
+
+		/* ARTICLES */
+		p {
+			margin-top: 0;
+		}
+
+		.texto-negrito {
+			font-weight: bold;
+		}
+		.artigo-inferior {
+			display: inline-block;
+			width: 43%;
+			height: 200px;
+			margin: 20px 1% 0 0;
+			vertical-align: top;
+			overflow: initial;
+
+		}
+		article:nth-of-type(odd) {
+			margin-top: 50px;
+		}
+		article:nth-of-type(even) {
+			float: right;
+		}
+		.img-antes-primeiro-artigo {
+			width: 70px;
+			height: 70px;
+			border-radius: 45%;
+			bottom: -10px;
+		}
+		.artigo-inferior__imagem-banner {
+			width: 100%;
+			margin-bottom: 0;
+			border-radius: 3px;
+		}
+		.artigo-inferior__estilo-1st-p {
+			text-decoration: underline;
+			color: #aaa;
+			font-size: 1.5em;
+		}
